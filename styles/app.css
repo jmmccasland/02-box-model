@@ -1,3 +1,30 @@
+/***************
+CSS Resets
+***************/
 body {
-  background: red;
+  margin: 0;
+  font-family: lato, 'Helvetica', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/***************
+Global Styles
+***************/
+header {
+  background: #5bc0de;
+  color: white;
+}
+.container {
+
+}
+
+/***************
+Header and Nav
+***************/
+.grid__item {
+  border: 0.1rem solid #555;
 }
