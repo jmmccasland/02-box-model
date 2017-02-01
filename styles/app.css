@@ -16,6 +16,7 @@ ul {
 }
 
 
+
 /***************
 Global Styles
 ***************/
@@ -29,6 +30,7 @@ img {
 }
 
 
+
 /***************
 Header and Nav
 ***************/
@@ -40,25 +42,31 @@ header {
 
 .top-nav {
   overflow: auto;
-  /*background: red;*/
+  margin: 0;
+  padding: 0;r
 }
 
 .top-nav__left {
   float: left;
-  /*background: yellow;*/
+  margin: 1rem 0;
+
 }
 
 .top-nav__right {
   display: inline-block;
   float: right;
-  margin: 1rem;
+  margin: 1rem 0;
   /*background: green;*/
 }
 
 .top-nav__item {
   display: inline-block;
+  padding: 0 1rem;
+  font-size: 1.25rem;
+  font-weight: 300;
   /*background: purple;*/
 }
+
 
 
 /***************
@@ -72,6 +80,7 @@ main {
 .grid {
   overflow: auto;
 }
+
 
 
 /***************
