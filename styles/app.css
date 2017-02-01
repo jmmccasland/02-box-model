@@ -14,9 +14,16 @@ ul {
 /***************
 Global Styles
 ***************/
+* {
+  box-sizing: border-box;
+}
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
 }
 
 /***************
@@ -52,6 +59,66 @@ header {
 /***************
 Main Section Styles
 ***************/
+main {
+  padding-top: 3rem;
+}
+
 .grid__item {
-  border: 0.1rem solid #555;
+  border: 0.1rem solid #aaa;
+
+  border-radius: 1rem;
+  overflow: auto;
+  width: calc(100% / 2 );
+}
+
+.user-info  {
+  overflow: auto;
+  border-bottom: .1rem solid #aaa;
+  padding: 1rem;
+}
+
+.user-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 5%;
+  float: left;
+}
+
+.user-info__name {
+margin: 0;
+}
+
+.user-info__username {
+margin: 0;
+}
+
+.user-info__text {
+  float: left;
+  margin-left: .5rem;
+}
+
+.repo {
+
+}
+
+.repo__item {
+  border-bottom: .1rem solid #aaa;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.repo__item-left {
+  float: right;
+}
+
+.language {
+
+}
+
+.repo__item-dot {
+  width: 1rem;
+  height: 1rem;
+  background: green;
+  border-radius: 50%;
+
 }
