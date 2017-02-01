@@ -43,7 +43,7 @@ header {
 .top-nav {
   overflow: auto;
   margin: 0;
-  padding: 0;r
+  padding: 0 1rem;
 }
 
 .top-nav__left {
@@ -56,15 +56,17 @@ header {
   display: inline-block;
   float: right;
   margin: 1rem 0;
-  /*background: green;*/
 }
 
 .top-nav__item {
   display: inline-block;
   padding: 0 1rem;
+
   font-size: 1.25rem;
-  font-weight: 300;
-  /*background: purple;*/
+}
+
+.top-nav__item:last-child {
+  padding-right: 0;
 }
 
 
@@ -87,14 +89,14 @@ main {
 Grid Item Styles and deeper
 ***************/
 .grid__item {
-  float: left;
-
-  border: 0.1rem solid #aaa;
-  min-width: 21rem;
-  width: calc(100% / 3 - 1rem - 1rem);
-  border-radius: 1rem;
-  margin: 1rem;
   overflow: auto;
+  float: left;
+  margin: 1rem;
+  width: calc(100% / 3 - 1rem - 1rem);
+  min-width: 21rem;
+
+  border-radius: .5rem;
+  border: 0.1rem solid #aaa;
 }
 
 .user-info {
@@ -126,8 +128,6 @@ Grid Item Styles and deeper
   font-size: .75rem;
   font-weight: 500;
 }
-
-
 
 .repos {
   margin: 0;
@@ -165,7 +165,35 @@ Grid Item Styles and deeper
 .repo__item-dot {
   width: .75rem;
   height: .75rem;
-  background: green;
+
   border-radius: 50%;
   display: inline-block;
 }
+  /* - language colors - */
+  .html {
+    background: #e44b23;
+  }
+
+  .css{
+    background: #563d7c;
+  }
+
+  .javascript {
+    background: #f1e05a;
+  }
+
+  .shell {
+    background: #89e051;
+  }
+
+  .python {
+    background: #3572a5;
+  }
+
+  .php {
+    background:#4f5d95;
+  }
+
+  .ruby {
+    background: #701516;
+  }
