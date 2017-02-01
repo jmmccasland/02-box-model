@@ -7,7 +7,7 @@ CSS Resets
 
 body {
   margin: 0;
-  font-family: lato, sans-serif;
+  font-family: lato, sans-serif; /* Might need google font stylesheet for lato to work for other users */
 }
 
 ul {
@@ -81,6 +81,7 @@ main {
 
 .grid {
   overflow: auto;
+  margin: 0 auto;
 }
 
 
@@ -106,26 +107,25 @@ Grid Item Styles and deeper
 }
 
 .user-image {
+  float: left;
   width: 100px;
   height: 100px;
+  margin-right: 1rem;
   border-radius: 5%;
-  float: left;
 }
 
 .user-info__text {
-  float: left;
-  margin-left: 1rem;
+
 }
 
 .user-info__name {
   margin: 0;
-  font-size: 1rem;
 }
 
 .user-info__username {
   margin: 0;
+
   color: #aaa;
-  font-size: .75rem;
   font-weight: 500;
 }
 
@@ -143,10 +143,11 @@ Grid Item Styles and deeper
 }
 
 .repo__item {
-  border-bottom: .1rem solid #aaa;
   overflow: auto;
   margin: 0;
   padding: .25rem 1rem;
+
+  border-bottom: .1rem solid #aaa;
 }
 
 .repo__item:last-child {
