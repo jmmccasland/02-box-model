@@ -18,7 +18,7 @@ Global Styles
   box-sizing: border-box;
 }
 .container {
-  width: 80%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -65,8 +65,9 @@ main {
 
 .grid__item {
   border: 0.1rem solid #aaa;
-
+  width: calc(100% / 3 - .5rem - .5rem);
   border-radius: 1rem;
+  margin: .5rem;
   overflow: auto;
 }
 
@@ -77,18 +78,22 @@ main {
 }
 
 .user-image {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 5%;
   float: left;
 }
 
 .user-info__name {
 margin: 0;
+font-size: 1rem;
 }
 
 .user-info__username {
 margin: 0;
+
+color: #aaa;
+font-size: .85rem;
 }
 
 .user-info__text {
@@ -99,23 +104,26 @@ margin: 0;
 .repos {
   margin: 0;
   padding: 0;
-  background: red;
+
 }
 
 .repo__item {
-  background: blue;
   padding: 0;
 }
 
 .repo-name {
   float: left;
-  background: green;
 }
 
 .repo__item {
   border-bottom: .1rem solid #aaa;
-  padding: 1rem;
   overflow: auto;
+  margin: 0;
+  padding: .25rem 1rem;
+}
+
+.repo__item:last-child {
+  border-bottom: none;
 }
 
 .repo__item-left {
@@ -128,8 +136,8 @@ margin: 0;
 }
 
 .repo__item-dot {
-  width: 1rem;
-  height: 1rem;
+  width: .75rem;
+  height: .75rem;
   background: green;
   border-radius: 50%;
   display: inline-block;
