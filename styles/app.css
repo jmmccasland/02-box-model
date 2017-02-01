@@ -1,6 +1,9 @@
 /***************
 CSS Resets
 ***************/
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -16,13 +19,8 @@ ul {
 /***************
 Global Styles
 ***************/
-
-* {
-  box-sizing: border-box;
-}
-
 .container {
-  max-width: 90%;
+  max-width: 90%; /* width will probably change */
   margin: 0 auto;
 }
 
