@@ -1,0 +1,202 @@
+/***************
+CSS Resets
+***************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: lato, sans-serif; /* Might need google font stylesheet for lato to work for other users */
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+
+/***************
+Global Styles
+***************/
+.section {
+  padding: 1rem;
+}
+
+.container {
+  max-width: 72rem; /* width will probably change */
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+/***************
+Header and Nav
+***************/
+
+header {
+  background: #5bc0de;
+  color: white;
+}
+
+.top-nav {
+  overflow: auto;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.top-nav__left {
+  float: left;
+  margin: 1rem 0;
+
+}
+
+.top-nav__right {
+  display: inline-block;
+  float: right;
+  margin: 1rem 0;
+}
+
+.top-nav__item {
+  display: inline-block;
+  padding: 0 1rem;
+
+  font-size: 1.25rem;
+}
+
+.top-nav__item:last-child {
+  padding-right: 0;
+}
+
+
+
+/***************
+Main Section Styles
+***************/
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+
+
+/***************
+Grid Item Styles and deeper
+***************/
+.grid__item {
+  flex-grow: 1;
+  overflow: auto;
+  float: left;
+  margin: 1rem;
+  flex-basis: calc(100% / 3 - 1rem - 1rem);
+  min-width: 19rem;
+
+  border-radius: .5rem;
+  border: 0.1rem solid #aaa;
+}
+
+.user-info {
+  overflow: auto;
+  border-bottom: .1rem solid #aaa;
+  padding: 1rem;
+}
+
+.user-image {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-right: 1rem;
+  border-radius: 5%;
+}
+
+.user-info__text {
+
+}
+
+.user-info__name {
+  margin: 0;
+}
+
+.user-info__username {
+  margin: 0;
+
+  color: #aaa;
+  font-weight: 500;
+}
+
+.repos {
+  margin: 0;
+  padding: 0;
+}
+
+.repo__item {
+  padding: 0;
+}
+
+.repo-name {
+  float: left;
+}
+
+.repo__item {
+  overflow: auto;
+  margin: 0;
+  padding: .25rem 1rem;
+
+  border-bottom: .1rem solid #aaa;
+}
+
+.repo__item:last-child {
+  border-bottom: none;
+}
+
+.repo__item-left {
+  float: right;
+}
+
+.language {
+  display: inline-block;
+  padding-left: 0.1rem;
+}
+
+.repo__item-dot {
+  width: .75rem;
+  height: .75rem;
+
+  border-radius: 50%;
+  display: inline-block;
+}
+  /* - language colors - */
+  .html {
+    background: #e44b23;
+  }
+
+  .css{
+    background: #563d7c;
+  }
+
+  .javascript {
+    background: #f1e05a;
+  }
+
+  .shell {
+    background: #89e051;
+  }
+
+  .python {
+    background: #3572a5;
+  }
+
+  .php {
+    background:#4f5d95;
+  }
+
+  .ruby {
+    background: #701516;
+  }

@@ -2,10 +2,209 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="styles/app.css">
+    <title>Popular Github</title>
+    <link rel="stylesheet" href="./styles/app.css">
   </head>
   <body>
+    <header class="section section--header">
+      <div class="container">
+        <nav class="top-nav">
+          <h1 class="top-nav__left">Popular Github</h1>
+          <ul class="top-nav__right">
+            <li class="top-nav__item">People</li>
+            <li class="top-nav__item">Repos</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="grid">
+
+          <!-- Grid Item 1-->
+          <div class="grid__item">
+            <div class="user-info">
+              <img class="user-image" src="https://avatars3.githubusercontent.com/u/6935786?v=3&u=48c466a5c73cbe6d31525bfbff78a00687a9076d&s=400" alt="">
+              <div class="user-info__text">
+                <h2 class="user-info__name">John Michael McCasland</h2>
+                <h3 class="user-info__username">jmmccasland</h3>
+              </div>
+            </div>
+
+            <div class="repos">
+              <div class="repo__item">
+                <p class="repo-name">01-html-introduction</p>
+                <div class="repo__item-left">
+                  <span class="repo__item-dot html"></span>
+                  <p class="language">HTML</p>
+                </div><!-- /.repo__item-left -->
+              </div><!-- /.repo__item -->
+
+              <div class="repo__item">
+                <p class="repo-name">javascript-koans</p>
+                <div class="repo__item-left">
+                  <span class="repo__item-dot javascript"></span>
+                  <p class="language">Javascript</p>
+                </div><!-- /.repo__item-left -->
+              </div><!-- /.repo__item -->
+
+            </div><!-- /.repos -->
+          </div><!--/.grid__item-->
+
+          <!-- Grid Item 2-->
+          <div class="grid__item">
+            <div class="user-info">
+              <img class="user-image" src="https://avatars3.githubusercontent.com/u/48685?v=3&s=460" alt="">
+              <div class="user-info__text">
+                <h2 class="user-info__name">Matt Mullenweg</h2>
+                <h3 class="user-info__username">m</h3>
+              </div>
+            </div>
+
+            <div class="repos">
+              <div class="repo__item">
+                <p class="repo-name">heroku-buildpack-wordpress</p>
+                <div class="repo__item-left">
+                  <span class="repo__item-dot shell"></span>
+                  <p class="language">Shell</p>
+                </div><!-- /.repo__item-left -->
+              </div><!-- /.repo__item -->
+
+              <div class="repo__item">
+                <p class="repo-name">women-in-software-eng</p>
+                <div class="repo__item-left">
+                  <span class="repo__item-dot python"></span>
+                  <p class="language">Python</p>
+                </div><!-- /.repo__item-left -->
+              </div><!-- /.repo__item -->
+
+            </div><!-- /.repos -->
+          </div><!--/.grid__item-->
+
+          <!-- Grid Item 3-->
+          <div class="grid__item">
+            <div class="user-info">
+              <img class="user-image" src="https://avatars0.githubusercontent.com/u/2532004?v=3&s=400" alt="">
+              <div class="user-info__text">
+                <h2 class="user-info__name">Ryan Tablada</h2>
+                <h3 class="user-info__username">rtablada</h3>
+              </div>
+            </div>
+
+            <div class="repos">
+              <div class="repo__item">
+                <p class="repo-name">package-installer</p>
+                <div class="repo__item-left">
+                  <span class="repo__item-dot php"></span>
+                  <p class="language">PHP</p>
+                </div><!-- /.repo__item-left -->
+              </div><!-- /.repo__item -->
+
+              <div class="repo__item">
+                <p class="repo-name">todo-ember-laravel</p>
+                <div class="repo__item-left">
+                  <span class="repo__item-dot javascript"></span>
+                  <p class="language">Javascript</p>
+                </div><!-- /.repo__item-left -->
+              </div><!-- /.repo__item -->
+
+            </div><!-- /.repos -->
+          </div><!--/.grid__item-->
+
+          <!-- Grid Item 4-->
+          <div class="grid__item">
+            <div class="user-info">
+              <img class="user-image" src="https://avatars0.githubusercontent.com/u/8445?v=3&s=460" alt="">
+              <div class="user-info__text">
+                <h2 class="user-info__name">Paul O’Shannessy</h2>
+                <h3 class="user-info__username">zpao</h3>
+              </div>
+            </div>
+
+            <div class="repos">
+              <div class="repo__item">
+                <p class="repo-name">facebook/react</p>
+                <div class="repo__item-left">
+                  <span class="repo__item-dot javascript"></span>
+                  <p class="language">Javascript</p>
+                </div><!-- /.repo__item-left -->
+              </div><!-- /.repo__item -->
+
+              <div class="repo__item">
+                <p class="repo-name">eslint/eslint</p>
+                <div class="repo__item-left">
+                  <span class="repo__item-dot javascript"></span>
+                  <p class="language">Javascript</p>
+                </div><!-- /.repo__item-left -->
+              </div><!-- /.repo__item -->
+
+            </div><!-- /.repos -->
+          </div><!--/.grid__item-->
+
+          <!-- Grid Item 5-->
+          <div class="grid__item">
+            <div class="user-info">
+              <img class="user-image" src="https://avatars3.githubusercontent.com/u/98681?v=3&s=400" alt="">
+              <div class="user-info__text">
+                <h2 class="user-info__name">Mark Otto</h2>
+                <h3 class="user-info__username">mdo</h3>
+              </div>
+            </div>
+
+            <div class="repos">
+              <div class="repo__item">
+                <p class="repo-name">twbs/bootstrap</p>
+                <div class="repo__item-left">
+                  <span class="repo__item-dot javascript"></span>
+                  <p class="language">Javascript</p>
+                </div><!-- /.repo__item-left -->
+              </div><!-- /.repo__item -->
+
+              <div class="repo__item">
+                <p class="repo-name">github-buttons</p>
+                <div class="repo__item-left">
+                  <span class="repo__item-dot css"></span>
+                  <p class="language">CSS</p>
+                </div><!-- /.repo__item-left -->
+              </div><!-- /.repo__item -->
+
+            </div><!-- /.repos -->
+          </div><!--/.grid__item-->
+
+          <!-- Grid Item 1-->
+          <div class="grid__item">
+            <div class="user-info">
+              <img class="user-image" src="https://avatars0.githubusercontent.com/u/12637?v=3&s=460" alt="">
+              <div class="user-info__text">
+                <h2 class="user-info__name">Robert Jackson</h2>
+                <h3 class="user-info__username">rwjblue</h3>
+              </div>
+            </div>
+
+            <div class="repos">
+              <div class="repo__item">
+                <p class="repo-name">pivot.js</p>
+                <div class="repo__item-left">
+                  <span class="repo__item-dot javascript"></span>
+                  <p class="language">Javascript</p>
+                </div><!-- /.repo__item-left -->
+              </div><!-- /.repo__item -->
+
+              <div class="repo__item">
+                <p class="repo-name">singleton_process</p>
+                <div class="repo__item-left">
+                  <span class="repo__item-dot ruby"></span>
+                  <p class="language">Ruby</p>
+                </div><!-- /.repo__item-left -->
+              </div><!-- /.repo__item -->
+
+            </div><!-- /.repos -->
+          </div><!--/.grid__item-->
+
+        </div><!-- /.grid -->
+      </div><!-- /.container -->
+    </main>
 
   </body>
 </html>
