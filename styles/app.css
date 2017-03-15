@@ -20,8 +20,12 @@ ul {
 /***************
 Global Styles
 ***************/
+.section {
+  padding: 1rem;
+}
+
 .container {
-  max-width: 90%; /* width will probably change */
+  max-width: 65rem; /* width will probably change */
   margin: 0 auto;
 }
 
@@ -74,12 +78,9 @@ header {
 /***************
 Main Section Styles
 ***************/
-
-main {
-  padding-top: 1rem;
-}
-
 .grid {
+  display: flex;
+  flex-wrap: wrap;
   overflow: auto;
   margin: 0 auto;
 }
@@ -90,11 +91,12 @@ main {
 Grid Item Styles and deeper
 ***************/
 .grid__item {
+  flex-grow: 1;
   overflow: auto;
   float: left;
   margin: 1rem;
-  width: calc(100% / 3 - 1rem - 1rem);
-  min-width: 21rem;
+  flex-basis: calc(100% / 3 - 1rem - 1rem);
+  min-width: 19rem;
 
   border-radius: .5rem;
   border: 0.1rem solid #aaa;
